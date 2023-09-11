@@ -2,10 +2,10 @@
 using namespace std;
 struct Employee
 {
-	string e_name[20];
+	string e_name, branch;
 	int e_code;
 	float e_salary;
-	string branch[20];
+
 } e1;
 int main()
 {
