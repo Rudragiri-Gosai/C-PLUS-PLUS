@@ -2,7 +2,7 @@
 using namespace std;
 class student{
 	private:
-		char s_name[20];
+		string s_name;
 		int s_age;
 	public:
 		get_data()
