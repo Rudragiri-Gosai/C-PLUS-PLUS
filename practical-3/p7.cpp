@@ -11,7 +11,7 @@ public:
 };
 void Employee::get_data()
 {
-    cout << "Enter your Employee name     :";
+    cout << "Enter your Employee   name     :";
     cin >> e_name;
     cout << "Enter your Employee code:";
     cin >> e_code;
