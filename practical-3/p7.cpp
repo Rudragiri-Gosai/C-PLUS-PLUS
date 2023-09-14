@@ -4,7 +4,7 @@ class Employee
 {
 public:
     string e_name, branch;
-    long long int e_code;
+    long int e_code;
     float e_salary;
     void get_data();
     void put_data();
