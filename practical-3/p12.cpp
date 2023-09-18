@@ -15,7 +15,6 @@ public:
     }
 };
 
-// getdata() function outside the class item
 void getdata(item &obj)
 {
     cout << "Enter number: ";
@@ -28,10 +27,8 @@ int main()
 {
     item obj;
 
-    // Call getdata() function
     getdata(obj);
 
-    // Call displaydata() function
     obj.displaydata();
 
     return 0;
