@@ -27,12 +27,12 @@ int main()
     for (i = 0; i < 2; i++)
     {
         emp[i].get_data();
+        // emp[i].put_data();
+    }
+    for (i = 0; i < 2; i++)
+    {
         emp[i].put_data();
     }
-    // for (i = 0; i < 10; i++)
-    // {
-    //     emp[i].put_data();
-    // }
 
     return 0;
 }
