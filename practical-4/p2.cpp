@@ -1,37 +1,27 @@
 #include <iostream>
 using namespace std;
-class Employee
+class Count
 {
+
+    static int count;
+
 public:
-    static string e_name;
-    static int e_ID;
-    static void get_data()
+    static int i_count()
     {
-    	cout << "Enter your Employee ID:";
-        cin >> e_ID;
-        cout << "Enter your Employee name     :";
-        cin.ignore();
-        getline(cin,e_name);    
+        count++;
     }
-    static void put_data()
+    static int getcount()
     {
-        cout << "Your Employee name :"<<e_name<< endl;
-        cout << "Your Employee ID :" << e_ID << endl;
+        return count;
     }
 };
-
+int Count ::count;
 int main()
 {
-    Employee emp[10];
-    int i;
-    for (i = 0; i < 10; i++)
-    {
-        emp[i].get_data();
-    }
-    for (i = 0; i < 10; i++)
-    {
-        emp[i].put_data();
-    }
+    Count::i_count();
+    Count::i_count();
+    Count::i_count();
 
+    cout << "Value of count is :: " << Count::getcount() << endl;
     return 0;
 }
