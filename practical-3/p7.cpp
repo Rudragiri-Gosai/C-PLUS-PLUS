@@ -6,11 +6,8 @@ public:
     string e_name, branch;
     long int e_code;
     float e_salary;
-    void get_data();
-    void put_data();
-};
-void Employee::get_data()
-{
+    void get_data()
+    {
     cout << "Enter your Employee name     :";
     cin >> e_name;
     cout << "Enter your Employee code:";
@@ -19,14 +16,15 @@ void Employee::get_data()
     cin >> e_salary;
     cout << "Enter your Employee Branch :";
     cin >> branch;
-}
-void Employee::put_data()
-{
+    }
+    void put_data()
+    {
     cout << "Your Employee name :" << e_name << endl;
     cout << "Your Employee code :" << e_code << endl;
     cout << "Your Employee Salary :" << e_salary << endl;
     cout << "Your Employee Branch :" << branch << endl;
-}
+    }
+};
 int main()
 {
     Employee e1;
